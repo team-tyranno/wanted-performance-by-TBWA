@@ -47,19 +47,16 @@
 <table align="center">
   <tr>
     <td align="center"><a href="https://github.com/gml9812"><img src="https://avatars.githubusercontent.com/u/28294925?v=4" width="150px" /></a></td>
-    <td align="center"><a href="https://github.com/seoysauce"><img src="https://avatars.githubusercontent.com/u/65898861?v=4" width="150px" /></a></td>
     <td align="center"><a href="https://github.com/Yummy-sk"><img src="https://avatars.githubusercontent.com/u/60822846?v=4" width="150px" /></a></td>
     <td align="center"><a href="https://github.com/jambottle"><img src="https://avatars.githubusercontent.com/u/72926450?v=4" width="150px" /></a></td>
   </tr>
   <tr>
     <td align="center"><b>👑 윤희준 (팀장)</b></td>
-    <td align="center"><b>정서영</b></td>
     <td align="center"><b>염상권</b></td>
     <td align="center"><b>김재원</b></td>
   </tr>
   <tr>
-    <td align="center"><b>image carousel 구현</b></td>
-    <td align="center"><b>배너 영역 구현</b></td>
+    <td align="center"><b>image carousel 및 배너 영역 구현</b></td>
     <td align="center"><b>youtube iframe 및 GNB 구현</b></td>
     <td align="center"><b>footer 및 popup 구현</b></td>
   </tr>
