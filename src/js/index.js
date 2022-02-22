@@ -1,3 +1,4 @@
-import { LottoGameController } from './controller/index.js';
+import { Carousel } from './components/index.js';
+import { $ } from './utils/index.js';
 
-const app = new LottoGameController();
+new Carousel($('#carousel'));
