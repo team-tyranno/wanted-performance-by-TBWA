@@ -1,0 +1,32 @@
+.banner_container {
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: -0.5px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  position: relative;
+  touch-action: manipulation;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0s ease 0s;
+  width: 1519px;
+}
+
+.banner_item {
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: -0.5px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
+  box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+  user-select: none;
+  width: 759.5px;
+}
