@@ -1,105 +1,105 @@
-
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 <div align='center'>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </div>
 
-
-<!-- PROJECT LOGO -->
 <br />
+
 <div align="center">
-
-  <h3 align="center">:thumbsup:js-lotto</h3>
-
+  <h3 align="center">4주차 과제 - 퍼포먼스바이 TBWA</h3>
   <p align="center">
-    javascript로 만든 로또 어플리케이션
+    vanilla javascript를 이용해 <a href="https://kukka.kr/">꾸까</a> 메인 페이지를 클론한 과제입니다.
     <br />
     <br />
-    <br />
+    <a href="https://flamboyant-ptolemy-2b58a6.netlify.app/"><strong>배포 링크</strong></a>
   </p>
 </div>
 
+<br>
 
 
-<!-- TABLE OF CONTENTS -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#팀원-소개">팀원 소개</a></li>
+    <li><a href="#과제-소개">과제 소개</a></li>
+    <li><a href="#구현한-기능">구현한 기능</a></li>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#설치-및-실행">설치 및 실행
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#프로젝트-구조">프로젝트 구조</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
 
+<br>
 
+## 팀원 소개
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://github.com/gml9812"><img src="https://avatars.githubusercontent.com/u/28294925?v=4" width="150px" /></a></td>
+    <td align="center"><a href="https://github.com/seoysauce"><img src="https://avatars.githubusercontent.com/u/65898861?v=4" width="150px" /></a></td>
+    <td align="center"><a href="https://github.com/Yummy-sk"><img src="https://avatars.githubusercontent.com/u/60822846?v=4" width="150px" /></a></td>
+    <td align="center"><a href="https://github.com/jambottle"><img src="https://avatars.githubusercontent.com/u/72926450?v=4" width="150px" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>👑 윤희준 (팀장)</b></td>
+    <td align="center"><b>정서영</b></td>
+    <td align="center"><b>염상권</b></td>
+    <td align="center"><b>김재원</b></td>
+  </tr>
+  <tr>
+    <td align="center"><b>image carousel 구현</b></td>
+    <td align="center"><b>배너 영역 구현</b></td>
+    <td align="center"><b>youtube iframe 및 GNB 구현</b></td>
+    <td align="center"><b>footer 및 popup 구현</b></td>
+  </tr>
+</table>
 
+<br>
+<hr>
+<br>
 
+## 구현한 기능
 
+- [x] 반응형 레이아웃 구현
+- [ ] ie8을 포함한 크로스 브라우징 처리
 
-javascript를 이용해 만들어 본 간단한 로또 시뮬레이터입니다.
+- [x] GNB 영역
+  - [x] 스크롤 이동 시 상단에 고정
+  - [x] 메뉴 hover 시 글자 하단에 밑줄 생성
+  - [x] 하단 영역 그림자 효과
+  - [x] 메뉴 아이템 중 '플라워클래스' 클릭 시 해당 영역으로 스크롤 이동
+- [x] iFrame Youtube 영역 
+  - [ ] caption 삽입
+  - [ ] 클릭 시 해당 영상 Youtube 링크로 이동
+- [x] image carousel 영역
+  - [x] 이미지 hover 시 줌 효과 
+  - [x] 버튼 hover 시 밑줄 혹은 color 변경 효과
+  - [x] 좌우 화살표 버튼 클릭 시 이미지, 가격, 태그 교체
+- [x] 배너 영역
+  - [x] 
+- [x] footer 영역
+  - [x] 
+- [x] 팝업 
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<br>
+<hr>
+<br>
 
-
-### Built With
-
-* HTML
-* CSS
-* Vanilla javascript
-* Cypress
-* ESLint
-* Prettier
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-### Prerequisites
-1. npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
+## 설치 및 실행
 
 1. Repo를 clone한다
    ```sh
@@ -117,33 +117,38 @@ javascript를 이용해 만들어 본 간단한 로또 시뮬레이터입니다.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-## Roadmap
+<br>
+<hr>
+<br>
 
-- [x] 로또 구입 금액을 입력받는다. 
-  - [x] 로또 1장의 가격(1,000원) 이하의 금액이 입력될 경우 재입력을 요청한다. 
-  - [x] 최소 화폐단위(1원) 미만의 자릿수가 포함된 경우 재입력을 요청한다. 
-  - [x] 1,000으로 나누어 떨어지지 않는 금액이 입력될 경우 거슬러 줄 금액을 알려주고 구매를 계속 진행한다. 
-- [x] 입력받은 금액으로 살 수 있는 만큼 로또를 발급한다. 
-  - [x] 모든 로또를 자동구매 방식으로 발급한다.
-  - [x] 로또 한 장 당 번호의 개수는 6개이며, 번호는 1~45 사이 랜덤한 정수로 구성된다. 
-  - [x] 각 번호는 서로 중복되지 않는다.
-- [x] 발급 후 토글 버튼을 클릭하면 복권 번호를 확인할 수 있다.
-  - [x] 기본 설정은 표시하지 않는 것으로 되어 있다. 
-- [x] 로또를 발급받으면 당첨 번호를 입력할 수 있는 칸이 표시된다. 
-  - [x] 6개의 당첨 번호와 1개의 보너스 번호 중 하나라도 입력되지 않으면 재입력을 요청한다. 
-  - [x] 1~45 사이 정수가 아닌 값이 입력될 경우 재입력을 요청한다. 
-  - [x] 중복되는 번호가 입력될 경우 재입력을 요청한다.  
-- [x] 올바른 당첨 번호를 입력하면 결과 확인하기 버튼이 활성화된다. 
-  - [x] 버튼 클릭 시 얻은 수익 및 당첨된 복권들의 등수를 모달 창으로 표시된다.
-  - [x] 일치하는 번호가 3, 4, 5, 6개일 때 각각 4, 3, 2, 1등으로 표시한다.
-  - [x] 일치하는 번호가 5개일 때만 보너스 번호 일치 여부를 확인한다. 
-- [x] 결과 확인하기 버튼을 클릭하면 다시하기 버튼이 생성된다. 
+## 프로젝트 구조
+
+```bash
+.
+├── index.html      
+│ 
+└── src
+    ├── assets       # 이미지 및 폰트
+    ├── css
+        ├── Carousel # 각 컴포넌트별로 구분된 css 파일들
+        ├── GNB
+        ├── Video
+        ├── ...
+    ├── js
+        ├── index.js # index.html에서 사용되는 스크립트 파일, 컴포넌트들을 취합한다. 
+        ├── Carousel # 바닐라 js로 구현한 웹 컴포넌트들 
+        ├── GNB
+        ├── Video
+        ├── ...
+        
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<br>
+<hr>
+<br>
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
