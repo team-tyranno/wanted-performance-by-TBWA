@@ -1,4 +1,4 @@
-.category_product_detail {
+.carousel_category_product_detail {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -9,7 +9,7 @@
   display: block;
 }
 
-.detail {
+.carousel_detail {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -25,13 +25,13 @@
   display: block;
 }
 
-.detail:after {
+.carousel_detail:after {
   content: '';
   display: block;
   clear: both;
 }
 
-.thumbnail {
+.carousel_thumbnail {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -50,7 +50,7 @@
   width: 42%;
 }
 
-.link > img {
+.carousel_link > img {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -63,7 +63,7 @@
   width: 100%;
 }
 
-.image {
+.carousel_image {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -83,11 +83,11 @@
   transition: transform 0.2s ease-out 0s;
 }
 
-.image:hover {
+.carousel_image:hover {
   transform: scale(1.05);
 }
 
-.category_product_bdg {
+.carousel_category_product_bdg {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -101,7 +101,7 @@
   z-index: 2;
 }
 
-.name_2 {
+.carousel_name_2 {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   list-style: none;
@@ -124,12 +124,12 @@
   margin-top: 2px;
 }
 
-.name_2:hover {
+.carousel_name_2:hover {
   text-decoration: underline;
   color: #222;
 }
 
-.summary {
+.carousel_summary {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -146,7 +146,7 @@
   padding: 0 0 0 20px;
 }
 
-.discount {
+.carousel_discount {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -158,7 +158,7 @@
   margin-top: 5px;
 }
 
-.price {
+.carousel_price {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   list-style: none;
@@ -172,7 +172,7 @@
   color: #222;
 }
 
-.more {
+.carousel_more {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -184,7 +184,7 @@
   margin-top: 10px;
 }
 
-.showroom {
+.carousel_showroom {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -199,7 +199,7 @@
   margin-top: 15px;
 }
 
-.store {
+.carousel_store {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   list-style: none;
@@ -224,42 +224,42 @@
   letter-spacing: -0.15px;
 }
 
-.store:hover {
+.carousel_store:hover {
   text-decoration: underline;
 }
 
-.gwang,
-.gwang:hover {
+.carousel_gwang,
+.carousel_gwang:hover {
   border-color: #a27fde;
   color: #a27fde;
 }
 
-.jam,
-.jam:hover {
+.carousel_jam,
+.carousel_jam:hover {
   border-color: #46cfa7;
   color: #46cfa7;
 }
 
-.wolgye,
-.wolgye:hover {
+.carousel_wolgye,
+.carousel_wolgye:hover {
   border-color: #ffa04d;
   color: #ffa04d;
 }
 
-.guro,
-.guro:hover {
+.carousel_guro,
+.carousel_guro:hover {
   border-color: #68a4fe;
   color: #68a4fe;
 }
 
-.songpa,
-.songpa:hover {
+.carousel_songpa,
+.carousel_songpa:hover {
   border-color: #ffcd32;
   color: #ffcd32;
 }
 
-.dongrae,
-.dongrae:hover {
+.carousel_dongrae,
+.carousel_dongrae:hover {
   border-color: #00afe3;
   color: #00afe3;
 }

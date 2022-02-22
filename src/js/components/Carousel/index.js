@@ -1,10 +1,3 @@
-// 모바일 대응
-// 사진 넣기, 버튼 처리=>위 아래로?, 전체 container 사이즈 이상 확인
-
-// 개별 꽃 이름/가격 font weight 이상.
-
-/* img는 이미지 풀사이즈로 나오게 만드는 빈 이미지, real_img가 진짜. */
-
 import FlowerClass from './FlowerClass/index.js';
 
 export default function Carousel($target) {
@@ -48,11 +41,11 @@ export default function Carousel($target) {
 
   this.setEvent = () => {
     this.$target.addEventListener('click', ({ target }) => {
-      if (target.classList.contains('left_button')) {
+      if (target.classList.contains('carousel_left_button')) {
         this.setState({ selected: this.$state.selected === 0 ? 2 : this.$state.selected - 1 });
       }
 
-      if (target.classList.contains('right_button')) {
+      if (target.classList.contains('carousel_right_button')) {
         this.setState({ selected: (this.$state.selected + 1) % 3 });
       }
     });
@@ -62,39 +55,39 @@ export default function Carousel($target) {
     const { selected, flowerClasses } = this.$state;
 
     return `
-    <div class="inbox">
-      <div class="home_contents_head">
-        <h3 class="tit">
+    <div class="carousel_inbox">
+      <div class="carousel_home_contents_head">
+        <h3 class="carousel_tit">
           <span>꽃과 함께 하는 일상, </span>
           <b>플라워클래스</b>
         </h3>
       </div>
-      <div class="products">
-        <div class="event_class">
-          <a href="/" class="link">
-            <img class="img mobile" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event.png" alt="매주 새로운 커리큘럼으로 배우는" />
-            <img class="img pc" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event_w.png" alt="매주 새로운 커리큘럼으로 배우는" />
-            <span class="real_img mobile" style="background-image: url(${flowerClasses[selected].mobileImageUrl});"></span>
-            <span class="real_img pc" style="background-image: url(${flowerClasses[selected].webImageUrl});"></span>
-            <strong class="name">플라워 클래스 자세히 보기</strong>
-            <span class="desc">매주 새로운 커리큘럼으로 배우는</span>
+      <div class="carousel_products">
+        <div class="carousel_event_class">
+          <a href="/" class="carousel_link">
+            <img class="carousel_img carousel_mobile" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event.png" alt="매주 새로운 커리큘럼으로 배우는" />
+            <img class="carousel_img carousel_pc" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event_w.png" alt="매주 새로운 커리큘럼으로 배우는" />
+            <span class="carousel_real_img carousel_mobile" style="background-image: url(${flowerClasses[selected].mobileImageUrl});"></span>
+            <span class="carousel_real_img carousel_pc" style="background-image: url(${flowerClasses[selected].webImageUrl});"></span>
+            <strong class="carousel_name">플라워 클래스 자세히 보기</strong>
+            <span class="carousel_desc">매주 새로운 커리큘럼으로 배우는</span>
           </a>
         </div>
-        <ul class="special_class">
-          <li class="first_item"></li>
-          <li class="second_item"></li>
+        <ul class="carousel_special_class">
+          <li class="carousel_first_item"></li>
+          <li class="carousel_second_item"></li>
         </ul>
-        <a href="/" class="more_link">더보기</a>
-        <button class="left_button" />
-        <button class="right_button" />
+        <a href="/" class="carousel_more_link">더보기</a>
+        <button class="carousel_left_button" />
+        <button class="carousel_right_button" />
       </div>
     </div>`;
   };
 
   this.mounted = () => {
     const { selected, flowerClasses } = this.$state;
-    const $firstItem = this.$target.querySelector('.first_item');
-    const $secondItem = this.$target.querySelector('.second_item');
+    const $firstItem = this.$target.querySelector('.carousel_first_item');
+    const $secondItem = this.$target.querySelector('.carousel_second_item');
 
     new FlowerClass($firstItem, flowerClasses[(selected + 1) % 3]);
 

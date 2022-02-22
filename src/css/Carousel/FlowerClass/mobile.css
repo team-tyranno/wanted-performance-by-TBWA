@@ -1,5 +1,5 @@
 @media (max-width: 1024px) {
-  .detail {
+  .carousel_detail {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
     line-height: 16px;
@@ -15,7 +15,7 @@
     padding-bottom: 0;
   }
 
-  .thumbnail {
+  .carousel_thumbnail {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
     line-height: 16px;
@@ -32,7 +32,7 @@
     width: 144px;
   }
 
-  .link {
+  .carousel_link {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
     line-height: 16px;
@@ -47,7 +47,7 @@
     background-image: url('https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg');
   }
 
-  .name_2 {
+  .carousel_name_2 {
     -webkit-text-size-adjust: 100%;
     font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
     list-style: none;
@@ -70,12 +70,12 @@
     margin-top: 1px;
   }
 
-  .name_2:hover {
+  .carousel_name_2:hover {
     text-decoration: underline;
     color: #222;
   }
 
-  .summary {
+  .carousel_summary {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
     line-height: 16px;
@@ -91,7 +91,7 @@
     padding: 0;
   }
 
-  .discount {
+  .carousel_discount {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
     line-height: 16px;
@@ -103,7 +103,7 @@
     margin-top: 10px;
   }
 
-  .price {
+  .carousel_price {
     -webkit-text-size-adjust: 100%;
     font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
     list-style: none;
@@ -117,7 +117,7 @@
     vertical-align: middle;
   }
 
-  .showroom {
+  .carousel_showroom {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
     line-height: 16px;

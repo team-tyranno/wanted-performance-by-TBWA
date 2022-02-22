@@ -1,4 +1,4 @@
-.inbox {
+.carousel_inbox {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -10,7 +10,7 @@
   padding: 0 60px;
 }
 
-.home_contents_head {
+.carousel_home_contents_head {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -20,7 +20,7 @@
   padding: 90px 0 0;
 }
 
-.tit {
+.carousel_tit {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   box-sizing: border-box;
@@ -33,15 +33,15 @@
   color: #222;
 }
 
-.tit > span {
+.carousel_tit > span {
   font-weight: 300;
 }
 
-.tit > b {
+.carousel_tit > b {
   font-weight: 700;
 }
 
-.products {
+.carousel_products {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -52,7 +52,7 @@
   padding: 40px 0 120px;
 }
 
-.event_class {
+.carousel_event_class {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -64,7 +64,7 @@
   padding-right: 2%;
 }
 
-.special_class {
+.carousel_special_class {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -79,7 +79,7 @@
   width: 50%;
 }
 
-.more_link {
+.carousel_more_link {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   box-sizing: border-box;
@@ -97,11 +97,11 @@
   color: #787878;
 }
 
-.more_link:hover {
+.carousel_more_link:hover {
   color: #ffcd32;
 }
 
-.link {
+.carousel_link {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -115,11 +115,11 @@
   display: block;
 }
 
-.mobile {
+.carousel_mobile {
   display: none;
 }
 
-.img {
+.carousel_img {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -131,7 +131,7 @@
   width: 100%;
 }
 
-.real_img {
+.carousel_real_img {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
   font-size: 12px;
@@ -149,7 +149,7 @@
   display: block;
 }
 
-.name {
+.carousel_name {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   box-sizing: border-box;
@@ -169,7 +169,7 @@
   color: #222;
 }
 
-.name:after {
+.carousel_name:after {
   content: '';
   position: absolute;
   top: 8px;
@@ -182,7 +182,7 @@
   background-position: -619px -187.5px;
 }
 
-.desc {
+.carousel_desc {
   -webkit-text-size-adjust: 100%;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
   box-sizing: border-box;
@@ -201,13 +201,13 @@
   color: #222;
 }
 
-.left_button {
+.carousel_left_button {
   left: calc((100% - 1380px) / 2);
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 191px;
+  top: 196px;
   opacity: 0.5;
   border-radius: 50%;
   background-color: #fff;
@@ -220,13 +220,13 @@
   background-size: 1252px 845px;
 }
 
-.right_button {
+.carousel_right_button {
   right: calc((100% - 1380px) / 2);
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 191px;
+  top: 196px;
   width: 30px;
   height: 60px;
   opacity: 0.5;
@@ -242,7 +242,7 @@
   background-size: 1252px 845px;
 }
 
-.first_item {
+.carousel_first_item {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -256,7 +256,7 @@
   padding-top: 0;
 }
 
-.second_item {
+.carousel_second_item {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
@@ -273,7 +273,7 @@
 }
 
 @media (min-width: 1024px) {
-  .name:after {
+  .carousel_name:after {
     top: 11px;
     right: 4px;
     background-image: url('../../assets/image/kukka.png');
