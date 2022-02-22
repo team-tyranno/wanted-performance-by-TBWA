@@ -1,5 +1,11 @@
 @import url('../css/GNB/index.css');
 @import url('../css/Video/index.css');
+@import './Carousel/index.css';
+@import './Carousel/mobile.css';
+@import './Carousel/FlowerClass/index.css';
+@import './Carousel/FlowerClass/mobile.css';
+@import './fonts.css';
+
 
 main {
   margin-top: 10px;
