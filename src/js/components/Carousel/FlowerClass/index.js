@@ -3,12 +3,7 @@ export default function FlowerClass($target, $props) {
     this.$state = {};
   };
 
-  this.setEvent = () => {
-    console.log($props);
-    this.$target.addEventListener('hover', ({ target }) => {
-      console.log(target);
-    });
-  };
+  this.setEvent = () => {};
 
   this.template = () => {
     return `
@@ -16,9 +11,9 @@ export default function FlowerClass($target, $props) {
       <dl class="detail">
         <dt class="thumbnail">
           <a class="link" href="/" data-offline="false" style="background-image: url(${$props.imageUrl});">
-          <img src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_special.png" alt="${$props.name}">
-          <span class="image" style="background-image: url(${$props.imageUrl});"></span>
-          <span class="category_product_bdg"></span>
+            <img src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_special.png" alt="${$props.name}">
+            <span class="image" style="background-image: url(${$props.imageUrl});"></span>
+            <span class="category_product_bdg"></span>
           </a>
         </dt>
         <dd class="summary">

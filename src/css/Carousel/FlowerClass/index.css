@@ -83,6 +83,10 @@
   transition: transform 0.2s ease-out 0s;
 }
 
+.image:hover {
+  transform: scale(1.05);
+}
+
 .category_product_bdg {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
@@ -120,12 +124,16 @@
   margin-top: 2px;
 }
 
+.name_2:hover {
+  text-decoration: underline;
+  color: #222;
+}
+
 .summary {
   -webkit-text-size-adjust: 100%;
   font-size: 12px;
   line-height: 16px;
   font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
-  font-weight: 500;
   list-style: none;
   box-sizing: border-box;
   margin: 0;

@@ -1,6 +1,7 @@
 // 더보기 및 옵션 버튼들 마우스오버 시 이벤트.
 // 이미지 마우스오버 시 이벤트
 // 모바일 대응
+// 개별 꽃 이름/가격 font weight 이상.
 
 /* img는 이미지 풀사이즈로 나오게 만드는 빈 이미지, real_img가 진짜. */
 
@@ -16,14 +17,16 @@ export default function Carousel($target) {
           name: '롱앤로우 센터피스(2/17~2/21)',
           price: '69,000',
           stores: ['광화문점', '잠실점', '월계점', '구로점'],
+          description: '플라워 클래스',
           imageUrl:
-            'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg&quot',
+            'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg',
         },
         {
           id: 1,
           name: '오아시스 리스(2/21~2/27)',
           price: '79,000',
           stores: ['광화문점', '잠실점', '월계점', '구로점', '송파점', '부산동래점'],
+          description: '오아시스 리스 클래스',
           imageUrl:
             'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg',
         },
@@ -32,6 +35,7 @@ export default function Carousel($target) {
           name: '클래식 핸드타이드(2/28~3/6)',
           price: '79,000',
           stores: ['잠실점', '월계점', '구로점', '송파점', '부산동래점'],
+          description: '클래식 핸드타이드 클래스',
           imageUrl:
             'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/107/img_%ED%81%B4%EB%9E%98%EC%8B%9D-%ED%95%B8%EB%93%9C%ED%83%80%EC%9D%B4%EB%93%9C.jpg',
         },
@@ -40,7 +44,6 @@ export default function Carousel($target) {
   };
 
   this.setEvent = () => {
-    // 모든 event target에 부여하고, 이벤트 버블링.
     this.$target.addEventListener('click', ({ target }) => {
       if (target.classList.contains('left_button')) {
         this.setState({ selected: (this.$state.selected + 1) % 3 });
@@ -68,7 +71,7 @@ export default function Carousel($target) {
           <a href="/" class="link">
             <img class="img pc" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event_w.png" alt="매주 새로운 커리큘럼으로 배우는" />
             <span class="real_img pc" style="background-image: url(${flowerClasses[selected].imageUrl});" />
-            <strong class="name">플라워 클래스 자세히 보기</strong>
+            <strong class="name">${flowerClasses[selected].description} 자세히 보기</strong>
             <span class="desc">매주 새로운 커리큘럼으로 배우는</span>
           </a>
         </div>
