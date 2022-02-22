@@ -29,9 +29,16 @@
   outline-width: 1px;
   font-size: 30px;
   line-height: 45px;
-  font-weight: 300;
   letter-spacing: -0.45px;
   color: #222;
+}
+
+.tit > span {
+  font-weight: 300;
+}
+
+.tit > b {
+  font-weight: 700;
 }
 
 .products {
@@ -114,7 +121,6 @@
   border: 0;
   vertical-align: top;
   width: 100%;
-  display: block;
 }
 
 .real_img {

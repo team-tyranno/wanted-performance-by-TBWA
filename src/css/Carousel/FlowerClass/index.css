@@ -22,6 +22,13 @@
   position: relative;
   padding: 0;
   padding-bottom: 0;
+  display: block;
+}
+
+.detail:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .thumbnail {
@@ -53,7 +60,6 @@
   box-sizing: border-box;
   border: 0;
   vertical-align: top;
-  display: block;
   width: 100%;
 }
 
@@ -112,6 +118,24 @@
   letter-spacing: -0.24px;
   color: #222;
   margin-top: 2px;
+}
+
+.summary {
+  -webkit-text-size-adjust: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Noto Sans KR', sans-serif, NanumGothic, '나눔고딕', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo';
+  font-weight: 500;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -0.5px;
+  outline-width: 1px;
+  display: block;
+  min-height: 105px;
+  overflow: hidden;
+  height: auto;
+  padding: 0 0 0 20px;
 }
 
 .discount {
