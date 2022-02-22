@@ -1,0 +1,30 @@
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  left: 50%;
+  transform: translateX(-55%);
+
+  width: 80%;
+}
+
+.modal-body > img {
+  width: 100%;
+}
+
+.modal-footer {
+  justify-content: space-between;
+  background-color: #222222;
+}
+
+.modal-footer > label {
+  color: #ffffff;
+}
