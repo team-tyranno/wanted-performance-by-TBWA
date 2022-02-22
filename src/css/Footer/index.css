@@ -1,0 +1,96 @@
+#footer {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 1240px;
+  margin: 0 auto;
+  padding: 80px 60px;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+}
+
+.footer-media > a > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+
+  width: 800px;
+  margin: 0;
+}
+
+.footer-contact > .strong {
+  margin-right: 10px;
+  color: #f7f7f7;
+  font-size: 22px;
+}
+
+.footer-contact > dd {
+  margin: 0;
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+.footer-contact > a {
+  margin-left: 15px;
+  border: 1px solid #9b9b9b;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 13px;
+}
+
+.footer-contact > .partners {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-wrapper > hr {
+  margin: 8px 0;
+}
+
+.footer-company {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+
+  width: 600px;
+  margin: 0;
+  color: #d3d3d3;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footer-company > dd {
+  margin: 0;
+}
+
+.footer-terms {
+  position: absolute;
+  bottom: 80px;
+  right: 60px;
+
+  display: flex;
+  gap: 25px;
+
+  color: #ffffff;
+  font-size: 14px;
+}
