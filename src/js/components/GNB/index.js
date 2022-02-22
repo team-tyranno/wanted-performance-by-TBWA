@@ -1,6 +1,4 @@
-/* eslint-disable max-lines-per-function */
-
-export default function GNB() {
+export default function GNB($target) {
   this.template = () => {
     return `
     <div class="navbar__inner">
@@ -290,11 +288,10 @@ export default function GNB() {
       </div>
 
       <ul class="navbar__menu">
-        <li><a href="#"><span class="block">꽃 정기구독</span></a></li>
-        <li><a href="#"><span class="show">정기구독</span></a></li>
+        <li><a href="#video"><span class="block">동영상</span></a></li>
+        <li><a href="#carousel"><span class="block">플라워클래스</span></a></li>
         <li><a href="#"><span>꽃다발</span></a></li>
         <li><a href="#"><span>당일배송</span></a></li>
-        <li><a href="#carousel"><span>플라워클래스</span></a></li>
         <li><a href="#"><span class="block">소품샾</span></a></li>
         <li><a href="#"><span class="block">이벤트</span></a></li>
       </ul>
@@ -313,10 +310,9 @@ export default function GNB() {
   };
 
   this.render = () => {
-    const $nav = document.querySelector('.navbar');
-
-    $nav.insertAdjacentHTML('afterbegin', this.template());
+    this.$target.innerHTML = this.template();
   };
 
+  this.$target = $target;
   this.render();
 }
