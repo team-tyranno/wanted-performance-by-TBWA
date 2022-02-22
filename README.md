@@ -20,8 +20,6 @@
 
 <br>
 
-
-
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -56,9 +54,9 @@
     <td align="center"><b>김재원</b></td>
   </tr>
   <tr>
-    <td align="center"><b>image carousel 및 배너 영역 구현</b></td>
-    <td align="center"><b>youtube iframe 및 GNB 구현</b></td>
-    <td align="center"><b>footer 및 popup 구현</b></td>
+    <td align="center"><b>Image Carousel 및 배너 영역 구현</b></td>
+    <td align="center"><b>GNB 및 YouTube Iframe 영역 구현</b></td>
+    <td align="center"><b>Footer 및 Modal 영역 구현</b></td>
   </tr>
 </table>
 
@@ -68,23 +66,31 @@
 
 ## 구현한 기능
 
-- [x] GNB 및 image carousel에 반응형 레이아웃 구현
+- [x] GNB 및 Image Carousel 영역에 반응형 레이아웃 구현
 
 - [x] GNB 영역
+
   - [x] 스크롤 이동 시 상단에 고정
   - [x] 메뉴 hover 시 글자 하단에 밑줄 생성
-  - [x] 하단 영역 그림자 효과
+  - [x] 하단 영역 그림자 효과 부여
   - [x] 메뉴 아이템 중 '플라워클래스' 클릭 시 해당 영역으로 스크롤 이동
-- [x] iFrame Youtube 영역 
-- [x] image carousel 영역
-  - [x] 이미지 hover 시 줌 효과 
+
+- [x] YouTube Iframe 영역
+
+- [x] Image Carousel 영역
+
+  - [x] 이미지 hover 시 줌 효과
   - [x] 버튼 hover 시 밑줄 혹은 color 변경 효과
   - [x] 좌우 화살표 버튼 클릭 시 이미지, 가격, 태그 교체
-- [x] 배너 영역
-  - [x] hover 시 이미지 줌 효과
-<!-- - [x] footer 영역
-- [x] 팝업 -->
 
+- [x] 배너 영역
+
+  - [x] hover 시 이미지 줌 효과
+
+- [x] Footer 영역
+
+  - [x] Bootstrap 쓰지 않고 순수 CSS로 레이아웃 구성
+  - [x] SNS 아이콘 클릭 시 새 창에서 링크 열기
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,15 +100,15 @@
 
 ## 설치 및 실행
 
-1. Repo를 clone한다
+1. Repo를 clone한다.
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-2. NPM pakage들을 설치한다
+2. NPM pakage들을 설치한다.
    ```sh
    npm install
    ```
-3. CORS 해결을 위해 http-server 등을 이용해 프로젝트를 실행한다
+3. CORS 해결을 위해 http-server 등을 이용해 프로젝트를 실행한다.
    ```sh
    npm install http-server
    http-server
@@ -118,22 +124,19 @@
 
 ```bash
 .
-├── index.html      
-│ 
+├── index.html
 └── src
     ├── assets       # 이미지 및 폰트
     ├── css
-        ├── Carousel # 각 컴포넌트별로 구분된 css 파일들
-        ├── GNB
+    │   ├── GNB      # 각 컴포넌트별로 구분한 css 파일들
+    │   ├── Video
+    │   ├── Carousel
+    │   └── ...
+    └── js
+        ├── GNB      # 바닐라 JS로 구현한 웹 컴포넌트들
         ├── Video
-        ├── ...
-    ├── js
-        ├── index.js # index.html에서 사용되는 스크립트 파일, 컴포넌트들을 취합한다. 
-        ├── Carousel # 바닐라 js로 구현한 웹 컴포넌트들 
-        ├── GNB
-        ├── Video
-        ├── ...
-        
+        ├── Carousel
+        └── ...
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
