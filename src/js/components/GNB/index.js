@@ -294,7 +294,7 @@ export default function GNB() {
         <li><a href="#"><span class="show">정기구독</span></a></li>
         <li><a href="#"><span>꽃다발</span></a></li>
         <li><a href="#"><span>당일배송</span></a></li>
-        <li><a href="#"><span>플라워클래스</span></a></li>
+        <li><a href="#carousel"><span>플라워클래스</span></a></li>
         <li><a href="#"><span class="block">소품샾</span></a></li>
         <li><a href="#"><span class="block">이벤트</span></a></li>
       </ul>
@@ -317,4 +317,6 @@ export default function GNB() {
 
     $nav.insertAdjacentHTML('afterbegin', this.template());
   };
+
+  this.render();
 }
