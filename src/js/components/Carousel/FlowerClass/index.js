@@ -3,6 +3,25 @@ export default function FlowerClass($target, $props) {
     this.$state = {};
   };
 
+  this.setStoreColor = (store) => {
+    switch (store) {
+      case '광화문점':
+        return 'gwang';
+      case '잠실점':
+        return 'jam';
+      case '월계점':
+        return 'wolgye';
+      case '구로점':
+        return 'guro';
+      case '송파점':
+        return 'songpa';
+      case '부산동래점':
+        return 'dongrae';
+      default:
+        return 'songpa';
+    }
+  };
+
   this.setEvent = () => {};
 
   this.template = () => {
@@ -11,7 +30,9 @@ export default function FlowerClass($target, $props) {
       <dl class="detail">
         <dt class="thumbnail">
           <a class="link" href="/" data-offline="false" style="background-image: url(${$props.imageUrl});">
-            <img src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_special.png" alt="${$props.name}">
+            <img src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_special.png" alt="${
+              $props.name
+            }">
             <span class="image" style="background-image: url(${$props.imageUrl});"></span>
             <span class="category_product_bdg"></span>
           </a>
@@ -23,6 +44,11 @@ export default function FlowerClass($target, $props) {
           </span>
           <span class="more"></span>
           <span class="showroom">
+            ${$props.stores
+              .map((store) => {
+                return `<a href="/" class="store ${this.setStoreColor(store)}" data-offline="true">${store}</a>`;
+              })
+              .join('')}
           </span>
         </dd>
       </dl>
