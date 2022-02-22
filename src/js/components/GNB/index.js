@@ -288,10 +288,10 @@ export default function GNB($target) {
       </div>
 
       <ul class="navbar__menu">
-        <li><a href="#video"><span class="block">동영상</span></a></li>
-        <li><a href="#carousel"><span class="block">플라워클래스</span></a></li>
-        <li><a href="#"><span>꽃다발</span></a></li>
-        <li><a href="#"><span>당일배송</span></a></li>
+        <li><a href="#"><span class="block">꽃다발</span></a></li>
+        <li><a href="#"><span class="block">당일배송</span></a></li>
+        <li><a href="#video"><span>동영상</span></a></li>
+        <li><a href="#carousel"><span>플라워클래스</span></a></li>
         <li><a href="#"><span class="block">소품샾</span></a></li>
         <li><a href="#"><span class="block">이벤트</span></a></li>
       </ul>
