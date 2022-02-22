@@ -1,5 +1,4 @@
-/* eslint-disable max-lines-per-function */
-export default function Video() {
+export default function Video($target) {
   this.template = () => {
     return `
     <div class="video-ratio">
@@ -8,10 +7,9 @@ export default function Video() {
   };
 
   this.render = () => {
-    const $video = document.querySelector('.video');
-
-    $video.insertAdjacentHTML('afterbegin', this.template());
+    this.$target.innerHTML = this.template();
   };
 
+  this.$target = $target;
   this.render();
 }
