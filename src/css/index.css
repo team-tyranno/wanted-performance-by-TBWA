@@ -1,0 +1,22 @@
+@import url('../css/GNB/index.css');
+@import url('../css/Video/index.css');
+
+main {
+  margin-top: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}

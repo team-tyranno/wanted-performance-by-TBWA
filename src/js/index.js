@@ -1,3 +1,8 @@
-import { LottoGameController } from './controller/index.js';
+import GNB from './components/GNB/index.js';
+import Video from './components/Video/index.js';
 
-const app = new LottoGameController();
+const gnb = new GNB();
+const video = new Video();
+
+gnb.render();
+video.render();
