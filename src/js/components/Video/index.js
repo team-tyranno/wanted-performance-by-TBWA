@@ -12,4 +12,6 @@ export default function Video() {
 
     $video.insertAdjacentHTML('afterbegin', this.template());
   };
+
+  this.render();
 }

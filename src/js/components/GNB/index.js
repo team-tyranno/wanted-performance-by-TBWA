@@ -317,4 +317,6 @@ export default function GNB() {
 
     $nav.insertAdjacentHTML('afterbegin', this.template());
   };
+
+  this.render();
 }
