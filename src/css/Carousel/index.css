@@ -115,6 +115,10 @@
   display: block;
 }
 
+.mobile {
+  display: none;
+}
+
 .img {
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.5px;
@@ -143,7 +147,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg');
 }
 
 .name {

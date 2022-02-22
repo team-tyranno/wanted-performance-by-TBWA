@@ -1,4 +1,6 @@
 // 모바일 대응
+// 사진 넣기, 버튼 처리=>위 아래로?, 전체 container 사이즈 이상 확인
+
 // 개별 꽃 이름/가격 font weight 이상.
 
 /* img는 이미지 풀사이즈로 나오게 만드는 빈 이미지, real_img가 진짜. */
@@ -15,15 +17,19 @@ export default function Carousel($target) {
           name: '롱앤로우 센터피스(2/17~2/21)',
           price: '69,000',
           stores: ['광화문점', '잠실점', '월계점', '구로점'],
-          imageUrl:
+          webImageUrl:
             'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg',
+          mobileImageUrl:
+            'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_mob_okfoQzB.jpeg',
         },
         {
           id: 1,
           name: '오아시스 리스(2/21~2/27)',
           price: '79,000',
           stores: ['광화문점', '잠실점', '월계점', '구로점', '송파점', '부산동래점'],
-          imageUrl:
+          webImageUrl:
+            'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg',
+          mobileImageUrl:
             'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg',
         },
         {
@@ -31,7 +37,9 @@ export default function Carousel($target) {
           name: '클래식 핸드타이드(2/28~3/6)',
           price: '79,000',
           stores: ['잠실점', '월계점', '구로점', '송파점', '부산동래점'],
-          imageUrl:
+          webImageUrl:
+            'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/107/img_%ED%81%B4%EB%9E%98%EC%8B%9D-%ED%95%B8%EB%93%9C%ED%83%80%EC%9D%B4%EB%93%9C.jpg',
+          mobileImageUrl:
             'https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/107/img_%ED%81%B4%EB%9E%98%EC%8B%9D-%ED%95%B8%EB%93%9C%ED%83%80%EC%9D%B4%EB%93%9C.jpg',
         },
       ],
@@ -64,8 +72,10 @@ export default function Carousel($target) {
       <div class="products">
         <div class="event_class">
           <a href="/" class="link">
+            <img class="img mobile" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event.png" alt="매주 새로운 커리큘럼으로 배우는" />
             <img class="img pc" src="https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/kukka/main_class_event_w.png" alt="매주 새로운 커리큘럼으로 배우는" />
-            <span class="real_img pc" style="background-image: url(${flowerClasses[selected].imageUrl});" />
+            <span class="real_img mobile" style="background-image: url(${flowerClasses[selected].mobileImageUrl});"></span>
+            <span class="real_img pc" style="background-image: url(${flowerClasses[selected].webImageUrl});"></span>
             <strong class="name">플라워 클래스 자세히 보기</strong>
             <span class="desc">매주 새로운 커리큘럼으로 배우는</span>
           </a>
