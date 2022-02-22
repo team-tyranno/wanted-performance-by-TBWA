@@ -4,6 +4,8 @@ header {
   width: 100%;
   border-bottom: 1px solid #ffcd32;
   z-index: 1000;
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
 }
 
 .navbar {
