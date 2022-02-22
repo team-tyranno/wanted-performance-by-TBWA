@@ -71,8 +71,7 @@
 
 ## 구현한 기능
 
-- [x] 반응형 레이아웃 구현
-- [ ] ie8을 포함한 크로스 브라우징 처리
+- [x] GNB 및 image carousel에 반응형 레이아웃 구현
 
 - [x] GNB 영역
   - [x] 스크롤 이동 시 상단에 고정
@@ -80,17 +79,14 @@
   - [x] 하단 영역 그림자 효과
   - [x] 메뉴 아이템 중 '플라워클래스' 클릭 시 해당 영역으로 스크롤 이동
 - [x] iFrame Youtube 영역 
-  - [ ] caption 삽입
-  - [ ] 클릭 시 해당 영상 Youtube 링크로 이동
 - [x] image carousel 영역
   - [x] 이미지 hover 시 줌 효과 
   - [x] 버튼 hover 시 밑줄 혹은 color 변경 효과
   - [x] 좌우 화살표 버튼 클릭 시 이미지, 가격, 태그 교체
 - [x] 배너 영역
-  - [x] 
-- [x] footer 영역
-  - [x] 
-- [x] 팝업 
+  - [x] hover 시 이미지 줌 효과
+<!-- - [x] footer 영역
+- [x] 팝업 -->
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
