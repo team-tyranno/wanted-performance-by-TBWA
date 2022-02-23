@@ -18,6 +18,8 @@
   position: absolute;
   top: 120px;
   right: 60px;
+
+  display: block;
 }
 
 .footer-media > a > img {
@@ -43,13 +45,13 @@
 }
 
 .footer-contact > dd {
-  margin: 0;
+  margin: 0 10px 0 0;
   color: #9b9b9b;
   font-size: 14px;
 }
 
 .footer-contact > a {
-  margin-left: 15px;
+  margin-right: 10px;
   border: 1px solid #9b9b9b;
   border-radius: 20px;
   padding: 8px 20px;
@@ -93,4 +95,29 @@
 
   color: #ffffff;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1380px) {
+  .footer-wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-terms {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-contact,
+  .footer-company {
+    width: 100%;
+  }
 }
