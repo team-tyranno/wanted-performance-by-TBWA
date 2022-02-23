@@ -1,8 +1,24 @@
 export default function Modal($target) {
+  const getCookie = () => {
+    if (document.cookie.indexOf('kukka_popup=done') < 0) {
+      document.querySelector('#modal').classList.remove('d-none');
+    } else {
+      document.querySelector('#modal').classList.add('d-none');
+    }
+  };
+
+  const setCookie = (name, value, expiryDate) => {
+    const today = new Date();
+    today.setDate(today.getDate() + expiryDate);
+
+    document.cookie = `${name}=${value}; path=/; expires=${today.toGMTString()};`;
+  };
+
   this.setEvent = () => {
     this.$target.addEventListener('click', ({ target }) => {
       if (target.classList.contains('modal-footer-checkbox')) {
         document.querySelector('#modal').classList.add('d-none');
+        setCookie('kukka_popup', 'done', 1);
       }
 
       if (target.classList.contains('modal-footer-button')) {
@@ -38,8 +54,13 @@ export default function Modal($target) {
     `;
   };
 
+  this.mounted = () => {
+    getCookie();
+  };
+
   this.render = () => {
     this.$target.innerHTML = this.template();
+    this.mounted();
   };
 
   this.$target = $target;
