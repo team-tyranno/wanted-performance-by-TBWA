@@ -1,4 +1,16 @@
 export default function Modal($target) {
+  this.setEvent = () => {
+    this.$target.addEventListener('click', ({ target }) => {
+      if (target.classList.contains('modal-footer-checkbox')) {
+        document.querySelector('#modal').classList.add('d-none');
+      }
+
+      if (target.classList.contains('modal-footer-button')) {
+        document.querySelector('#modal').classList.add('d-none');
+      }
+    });
+  };
+
   this.template = () => {
     return `
       <div class="modal-dialog" role="document">
@@ -31,5 +43,6 @@ export default function Modal($target) {
   };
 
   this.$target = $target;
+  this.setEvent();
   this.render();
 }
