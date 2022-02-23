@@ -28,3 +28,7 @@
 .modal-footer > label {
   color: #ffffff;
 }
+
+.modal-footer-checkbox {
+  cursor: pointer;
+}

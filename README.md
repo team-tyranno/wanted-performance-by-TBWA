@@ -89,7 +89,7 @@
 
 - [x] Footer 영역
 
-  - [x] Bootstrap 쓰지 않고 순수 CSS로 레이아웃 구성
+  - [x] Bootstrap 쓰지 않고 순수 CSS로 반응형 레이아웃 구현
   - [x] SNS 아이콘 클릭 시 새 창에서 링크 열기
 
 - [x] Modal 영역
