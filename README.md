@@ -92,6 +92,11 @@
   - [x] Bootstrap 쓰지 않고 순수 CSS로 레이아웃 구성
   - [x] SNS 아이콘 클릭 시 새 창에서 링크 열기
 
+- [x] Modal 영역
+
+  - [x] 이미지 클릭 시 타 사이트로 이동하는 기능 구현
+  - [x] 체크박스 및 버튼 클릭 시 Modal을 숨김 처리하는 이벤트 구현
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <br>
